@@ -2,27 +2,43 @@ rule "FireButton1"
 when
     Item GPIO_BUTTON1 changed to CLOSED
 then
-    relais1Switch.sendCommand("ON")
+    if (relais1Switch.state.toString() == "OFF") {
+      relais1Switch.sendCommand("ON");
+    } else {
+      relais1Switch.sendCommand("OFF");
+    }
 end
 
 rule "FireButton2"
 when
     Item GPIO_BUTTON2 changed to CLOSED
 then
-    relais2Switch.sendCommand("ON")
+    if (relais2Switch.state.toString() == "OFF") {
+      relais2Switch.sendCommand("ON");
+    } else {
+      relais2Switch.sendCommand("OFF");
+    }
 end
 
 rule "FireButton3"
 when
     Item GPIO_BUTTON3 changed to CLOSED
 then
-    relais3Switch.sendCommand("ON")
+    if (relais3Switch.state.toString() == "OFF") {
+       relais3Switch.sendCommand("ON");
+    } else {
+       relais3Switch.sendCommand("OFF");
+    }
 end
 
 rule "FireButton4"
 when
     Item GPIO_BUTTON4 changed to CLOSED
 then
-    relais4Switch.sendCommand("ON")
+    if (relais4Switch.state.toString() == "OFF") {
+      relais4Switch.sendCommand("ON");
+    } else {
+      relais4Switch.sendCommand("OFF");
+    }
 end
 
