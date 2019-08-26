@@ -1,1 +1,1 @@
-# openhab_myspringkler
+# openhab_mysprinkler
