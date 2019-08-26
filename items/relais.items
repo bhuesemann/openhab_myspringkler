@@ -1,0 +1,5 @@
+Group grp_relais "Relais Gruppe" <poweroutlet>
+String relais1Switch "Relais 1" <poweroutlet> (grp_relais) [ "Switchable" ] { channel="exec:command:relais1-control:input", autoupdate="true" }
+String relais2Switch "Relais 2" <poweroutlet> (grp_relais) [ "Switchable" ] { channel="exec:command:relais2-control:input", autoupdate="true" }
+String relais3Switch "Relais 3" <poweroutlet> (grp_relais) [ "Switchable" ] { channel="exec:command:relais3-control:input", autoupdate="true" }
+String relais4Switch "Relais 4" <poweroutlet> (grp_relais) [ "Switchable" ] { channel="exec:command:relais4-control:input", autoupdate="true" }

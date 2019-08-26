@@ -1,0 +1,28 @@
+rule "FireButton1"
+when
+    Item GPIO_BUTTON1 changed to CLOSED
+then
+    relais1Switch.sendCommand("ON")
+end
+
+rule "FireButton2"
+when
+    Item GPIO_BUTTON2 changed to CLOSED
+then
+    relais2Switch.sendCommand("ON")
+end
+
+rule "FireButton3"
+when
+    Item GPIO_BUTTON3 changed to CLOSED
+then
+    relais3Switch.sendCommand("ON")
+end
+
+rule "FireButton4"
+when
+    Item GPIO_BUTTON4 changed to CLOSED
+then
+    relais4Switch.sendCommand("ON")
+end
+

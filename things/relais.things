@@ -1,0 +1,4 @@
+Thing exec:command:relais1-control [ command="/etc/openhab2/scripts/relais.py 4 %2$s", interval=0, autorun=true ]
+Thing exec:command:relais2-control [ command="/etc/openhab2/scripts/relais.py 5 %2$s", interval=0, autorun=true ]
+Thing exec:command:relais3-control [ command="/etc/openhab2/scripts/relais.py 6 %2$s", interval=0, autorun=true ]
+Thing exec:command:relais4-control [ command="/etc/openhab2/scripts/relais.py 16 %2$s", interval=0, autorun=true ]

@@ -1,0 +1,8 @@
+sitemap relais label="Relais" {
+    Frame label="Relais Gruppe" {
+        Switch item=relais1Switch //mappings=[ "ON"="ON", "OFF"="OFF" ]
+        Switch item=relais2Switch //mappings=[ "ON"="ON", "OFF"="OFF" ]
+        Switch item=relais3Switch //mappings=[ "ON"="ON", "OFF"="OFF" ]
+        Switch item=relais4Switch //mappings=[ "ON"="ON", "OFF"="OFF" ]
+    }
+}

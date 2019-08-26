@@ -1,0 +1,6 @@
+Group grp_button "Button Gruppe" <poweroutlet>
+Contact GPIO_BUTTON1 "Button [%s]" (grp_button) { gpio="pin:17 activelow:no" }
+Contact GPIO_BUTTON2 "Button [%s]" (grp_button) { gpio="pin:22 activelow:no" }
+Contact GPIO_BUTTON3 "Button [%s]" (grp_button) { gpio="pin:26 activelow:no" }
+Contact GPIO_BUTTON4 "Button [%s]" (grp_button) { gpio="pin:27 activelow:no" }
+

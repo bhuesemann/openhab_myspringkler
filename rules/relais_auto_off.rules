@@ -1,0 +1,46 @@
+var timeout = 60 * 30 // sec
+ 
+rule "Relais 1"
+when
+    Item relais1Switch received update
+then
+ 
+    if (relais1Switch.state == "ON")
+    createTimer(now.plusSeconds(timeout)) [|
+        relais1Switch.sendCommand("OFF")	        
+    ]
+end
+ 
+rule "Relais 2"
+when
+    Item relais2Switch received update
+then
+ 
+    if (relais2Switch.state == "ON")
+    createTimer(now.plusSeconds(timeout)) [|
+        relais2Switch.sendCommand("OFF")
+    ]
+end
+
+rule "Relais 3"
+when
+    Item relais3Switch received update
+then
+
+    if (relais3Switch.state == "ON")
+    createTimer(now.plusSeconds(timeout)) [|
+        relais3Switch.sendCommand("OFF")
+    ]
+end
+
+rule "Relais 4"
+when
+    Item relais4Switch received update
+then
+
+    if (relais4Switch.state == "ON")
+    createTimer(now.plusSeconds(timeout)) [|
+        relais4Switch.sendCommand("OFF")
+    ]
+end
+
